@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Milky Way Idle Plugin and Website Collection</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 50px;
+      background-color: #f9f9f9;
+    }
+
+    .language-switcher {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      display: flex;
+      background-color: white;
+      border-radius: 25px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+
+    .lang-btn {
+      padding: 10px 20px;
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: bold;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+      color: #666;
+    }
+
+    .lang-btn:hover {
+      background-color: #f0f0f0;
+    }
+
+    .lang-btn.active {
+      background-color: #007bff;
+      color: white;
+    }
+
+    .lang-btn:first-child {
+      border-right: 1px solid #e0e0e0;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      gap: 100px;
+    }
+
+    .column {
+      width: 400px;
+      text-align: center;
+    }
+
+    .sub-column {
+      width: 400px;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .link-list a {
+      text-decoration: none;
+      color: #007bff;
+      font-size: 24px;
+      font-weight: bold;
+      display: block;
+      margin: 10px 0;
+      word-break: break-word;
+    }
+
+    .sub-link-list a {
+      text-decoration: none;
+      color: #007bff;
+      font-size: 18px;
+      font-weight: normal;
+      display: block;
+      margin: 8px 0;
+      word-break: break-word;
+    }
+
+    .link-list a:hover,
+    .sub-link-list a:hover {
+      color: #0056b3;
+    }
+
+    h2 {
+      color: black;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    h3 {
+      color: #333;
+      font-size: 20px;
+      margin-bottom: 15px;
+      margin-top: 30px;
+    }
+
+    .footer-note {
+      font-size: 14px;
+      color: #666;
+      text-align: left;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- 语言切换按钮 -->
+  <div class="language-switcher">
+    <button class="lang-btn active" onclick="switchToEnglish()">English</button>
+    <button class="lang-btn" onclick="switchToChinese()">Chinese</button>
+  </div>
+
+  <div class="container">
+    <!-- 插件列 -->
+    <div class="column">
+      <h2>Plugins</h2>
+      <div class="link-list">
+        <a href="https://greasyfork.cc/zh-CN/scripts/494467-mwitools" target="_blank">MWITOOLS</a>
+        <a href="https://greasyfork.org/zh-CN/scripts/499963-%E9%93%B6%E6%B2%B3%E5%A5%B6%E7%89%9B-%E9%A3%9F%E7%94%A8%E5%B7%A5%E5%85%B7" target="_blank">Drop Tracking</a>
+      </div>
+
+      <!-- 实用子栏 -->
+      <div class="column">
+        <h3>Utility</h3>
+        <div class="link-list">
+        <a href="https://greasyfork.cc/zh-CN/scripts/536205" target="_blank">Drop Luck</a>
+        <a href="https://greasyfork.cc/zh-CN/scripts/531872-mwi-ultimate-enhancement-tracker-v3-7-7" target="_blank">Enhancement Tracker</a>
+        <a href="https://greasyfork.org/zh-CN/scripts/530217-mwi-price-history-viewer-modified-%E9%93%B6%E6%B2%B3%E7%89%9B%E7%89%9B%E5%95%86%E5%9F%8E%E4%B8%AD%E7%89%A9%E5%93%81%E4%BB%B7%E6%A0%BC%E8%B5%B0%E5%8A%A8%E5%B0%8F%E5%8A%A9%E6%89%8B" target="_blank">Price History Viewer</a>
+        <a href="https://update.greasyfork.org/scripts/530757/MWIAlchemyCalc.user.js" target="_blank">MWI Alchemy Calculator</a>
+        <a href="https://greasyfork.org/zh-CN/scripts/537282-mwi-equipment-diff" target="_blank">Equipment Diff</a>
+        <a href="https://greasyfork.org/zh-CN/scripts/532170-%E9%93%B6%E6%B2%B3%E5%A5%B6%E7%89%9B%E6%94%BE%E7%BD%AE-%E8%BE%85%E5%8A%A9%E5%A2%9E%E5%BC%BA" target="_blank">Material Requirement Calculator</a>
+        <a href="https://greasyfork.cc/zh-CN/scripts/534895-real-profit-calculator" target="_blank">Combat Simulator Buff Fix</a>
+        <a href="https://greasyfork.cc/zh-CN/scripts/535671-ranged-way-idle" target="_blank">Quest and Inventory Optimization</a>
+        <a href="https://greasyfork.org/zh-CN/scripts/535371-mwi-qqshow" target="_blank">QQ Show</a>
+        <a href="https://update.greasyfork.cc/scripts/528870/MWI%E6%88%BF%E5%B1%8B%E5%8D%87%E7%BA%A7%E6%9D%90%E6%96%99%E8%AE%A1%E7%AE%97%E5%99%A8.user.js" target="_blank">House Upgrade Calculator</a>
+        </div>
+      </div>  
+
+      <div class="footer-note">
+        Note: Websites marked with * may require a VPN or proxy to access. For recommended plugins and URLs, please contact noonsleepbox via in-game private message.
+      <br/>
+      </div>
+    </div>
+
+   <!-- 美化子栏 -->
+     <div class="column">
+       <h3>Cosmetic</h3>
+       <div class="link-list">
+         <a href="https://greasyfork.cc/zh-CN/scripts/535422-mwi-hit-tracker-canvas" target="_blank">Hit Tracker Canvas</a>
+	 <a href="https://greasyfork.org/zh-CN/scripts/537441-milkywayidle-%E5%85%AC%E5%B1%8F%E8%81%8A%E5%A4%A9%E5%85%A8%E5%B1%8F" target="_blank">Fullscreen Public Chat</a>
+         <a href="https://greasyfork.org/zh-CN/scripts/535467-egg-hit-tracker" target="_blank">Egg Hit Tracker</a>
+         <a href="https://greasyfork.org/zh-CN/scripts/535795-%E7%89%9B%E7%89%9B%E8%81%8A%E5%A4%A9%E5%A2%9E%E5%BC%BA%E6%8F%92%E4%BB%B6" target="_blank">Chat Enhancement</a>
+         <a href="https://greasyfork.org/zh-CN/scripts/536463-%E7%89%9B%E7%89%9Bui%E5%A2%9E%E5%BC%BA%E6%8F%92%E4%BB%B6" target="_blank">UI Enhancement</a>
+         <a href="https://greasyfork.org/zh-CN/scripts/534023-%E9%93%B6%E6%B2%B3%E5%A5%B6%E7%89%9B-%E6%80%AA%E7%89%A9%E6%8D%A2%E7%9A%AE-%E6%88%98%E8%B4%A5cg" target="_blank">Monster Reskin</a>
+         <a href="https://greasyfork.org/zh-CN/scripts/535360-mwi-hbuilderx-green-color" target="_blank">Green Color Theme</a>
+         <a href=" https://greasyfork.org/zh-CN/scripts/535131-mwi-vscode-dark-color" target="_blank">Dark Color Theme</a>
+         <a href="https://greasyfork.org/zh-CN/scripts/536109-mwi-danmaku" target="_blank">MWI Danmaku</a>
+         <a href="https://greasyfork.org/scripts/538533" target="_blank">Monster Girl Transformation</a>
+       </div>
+     </div>
+
+   <!-- 便捷子栏 -->
+     <div class="column">
+       <h3>Convenience</h3>
+       <div class="link-list">
+         <a href="https://greasyfork.cc/zh-CN/scripts/530646-mwi-%E5%A5%BD%E5%8F%8B%E5%8A%A9%E6%89%8B" target="_blank">Friend Assistant</a>
+         <a href="https://greasyfork.org/zh-CN/scripts/536234-%E7%89%9B%E7%89%9B%E6%88%98%E6%96%97%E5%8A%A9%E6%89%8B" target="_blank">Power Ranking</a>
+         <a href="https://greasyfork.org/zh-CN/scripts/533627-%E9%93%B6%E6%B2%B3%E7%89%9B%E7%89%9B-1" target="_blank">Quick +1</a>
+         <a href="https://greasyfork.org/zh-CN/scripts/531682-%E9%93%B6%E6%B2%B3%E5%A5%B6%E7%89%9B-%E4%BB%93%E5%BA%93%E7%89%A9%E5%93%81%E6%94%B6%E8%97%8F%E5%92%8C%E5%BF%AB%E9%80%9F%E5%88%87%E6%8D%A2%E8%A7%92%E8%89%B2" target="_blank">Warehouse Item Favorites and Quick Character Switching</a>
+         <a href="https://greasyfork.org/zh-CN/scripts/531374-mwi-qol-profile-on-avatar" target="_blank">Tap Avatar to View Profile</a>
+         <a href="https://greasyfork.org/en/scripts/539693-milky-way-idle-simple-market" target="_blank">View Stock Quantity in Market Interface</a>
+        </div>
+      </div>
+
+    <!-- 网址列 -->
+    <div class="column">
+      <h2>Websites</h2>
+      <div class="link-list">
+        <a href="https://shykai.github.io/MWICombatSimulatorTest/dist/" target="_blank">Combat Simulator</a>
+        <a href="https://bkn46.github.io/MWICombatSimulatorTest/dist/" target="_blank">BKN Combat Simulator Modification</a>
+        <a href="https://milkonomy.pages.dev/#/dashboard" target="_blank">Profit Simulator and Enhancement Simulation*</a>
+        <a href="https://doh-nuts.github.io/Enhancelator/" target="_blank">Enhancement Simulation*</a>
+        <a href="https://ozanzadeoglu.github.io/MWI-chest-sim/" target="_blank">Dungeon Loot Box Simulator*</a>
+        <a href="https://feishu.cn/docx/KG9ddER6Eo2uPoxJFkicsvbEnCe" target="_blank">NiuNiu Handbook</a>
+        <a href="https://woodensail.github.io/MWIviewer/" target="_blank">Long-term Item Trends</a>
+        <a href="https://li-mwi-leaderboard.ngrok.io/" target="_blank">Experience Ranking</a>
+        <a href="https://rshock.github.io/MilkWayBulletin/" target="_blank">News Flash</a>
+        <a href="https://discord.gg/2XKXWR6B/" target="_blank">Discord</a>
+        <a href="https://niuniu.0xa2c2a.shop/party.html" target="_blank">Chinese Player Teaming Status</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function switchToEnglish() {
+      // Already on English page
+      alert('Currently on English version');
+      
+      // 更新按钮状态
+      document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+      event.target.classList.add('active');
+    }
+
+    function switchToChinese() {
+      // Switch to Chinese
+      window.location.href = 'https://yiweilongzxa.github.io/nwipluginwebsitecollection/';
+      
+      // 更新按钮状态
+      document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+      event.target.classList.add('active');
+    }
+  </script>
+
+</body>
+
+</html>
